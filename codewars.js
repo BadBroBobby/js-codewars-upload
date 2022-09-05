@@ -45,3 +45,15 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     // code goes here
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
   }
+  
+ /*  Given a sequence of numbers, find the largest pair sum in the sequence.
+
+  For example */
+
+function largestPairSum (numbers) {
+    //TODO: Write your Code here
+    numbers.sort( (a,b) => a-b);
+    let firstNum = numbers[numbers.length-1]
+    let secondNum = numbers[numbers.length-2]
+    return firstNum + secondNum
+  }
